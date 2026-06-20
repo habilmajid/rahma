@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Rahma ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* Animated gradient background */
+        background: linear-gradient(-45deg, #ff758c, #ff7eb3, #ffb199, #ff758c);
+        background-size: 400% 400%;
+        animation: gradientMove 10s ease infinite;
+
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+    }
+
+    @keyframes gradientMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    /* Floating hearts background */
+    .heart-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 0;
+    }
+
+    .heart-bg span {
+        position: absolute;
+        color: rgba(255,255,255,0.4);
+        font-size: 20px;
+        animation: floatUp 8s linear infinite;
+    }
+
+    @keyframes floatUp {
+        0% {
+            transform: translateY(100vh) scale(0.5);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-10vh) scale(1.2);
+            opacity: 0;
+        }
+    }
+
+    .box {
+        background: rgba(255,255,255,0.2);
+        padding: 30px;
+        border-radius: 15px;
+        backdrop-filter: blur(12px);
+        text-align: center;
+        width: 320px;
+        box-shadow: 0 0 25px rgba(0,0,0,0.2);
+        z-index: 2;
+        position: relative;
+    }
+
+    input {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 8px;
+    }
+
+    button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        background: #ff2e63;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    #page {
+        display: none;
+        text-align: center;
+        color: white;
+        padding: 20px;
+        height: 100vh;
+        overflow: hidden;
+        z-index: 2;
+        position: relative;
+    }
+
+    .title {
+        font-family: 'Playfair Display', serif;
+        font-size: 42px;
+        text-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    .heart {
+        font-size: 28px;
+        animation: beat 1s infinite;
+    }
+
+    @keyframes beat {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.3); }
+        100% { transform: scale(1); }
+    }
+
+    .love-box {
+        margin: 10px auto;
+        width: 80%;
+        height: 65vh;
+        overflow-y: scroll;
+        background: rgba(0,0,0,0.35);
+        padding: 20px;
+        border-radius: 15px;
+        font-family: 'Dancing Script', cursive;
+        font-size: 22px;
+        line-height: 1.8;
+        text-align: left;
+    }
+
+    .love-box::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .love-box::-webkit-scrollbar-thumb {
+        background: #ff2e63;
+        border-radius: 10px;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- FLOATING HEARTS -->
+<div class="heart-bg">
+    <span style="left:10%">❤️</span>
+    <span style="left:20%; animation-delay:2s;">💖</span>
+    <span style="left:35%; animation-delay:4s;">❤️</span>
+    <span style="left:50%; animation-delay:1s;">💘</span>
+    <span style="left:70%; animation-delay:3s;">❤️</span>
+    <span style="left:85%; animation-delay:5s;">💖</span>
+</div>
+
+<!-- LOGIN -->
+<div class="box" id="loginBox">
+    <h2>Login 💌</h2>
+    <input type="text" id="user" placeholder="Username">
+    <input type="password" id="pass" placeholder="Password">
+    <button onclick="login()">Enter</button>
+</div>
+
+<!-- BIRTHDAY PAGE -->
+<div id="page">
+    <div class="title">🎉 Happy Birthday Rahma 🎂</div>
+    <div class="heart">❤️</div>
+
+    <div class="love-box">
+        Mpenzi wangu Rahma ❤️,<br><br>
+        Leo ni siku maalum sana katika historia ya maisha yako na pia katika moyo wangu.  
+        Siku ambayo dunia ilipata zawadi ya kipekee, na mimi nikapata bahati ya kukufahamu 🌹  
+
+        Kila ninapokuwaza, nahisi utulivu wa ajabu ndani ya moyo wangu, kama vile kila kitu duniani kinakuwa sawa kwa sababu tu upo wewe 😊  
+        Wewe si mtu wa kawaida kwangu, wewe ni sehemu ya maisha yangu ya kila siku, sehemu ya ndoto zangu na sababu ya tabasamu langu.  
+
+        Nataka ujue kwamba nakupenda kwa dhati kabisa, si kwa maneno ya mdomo tu bali kwa hisia za moyo wangu wote 💖  
+        Upendo wangu kwako haupimiki kwa wakati wala umbali, unazidi kukua kila siku inapopita.  
+
+        Nakumbuka kila muda tunaotumia kuzungumza, kila tabasamu lako, na kila neno lako japo dogo linanifanya nijisikie kuwa mtu bora zaidi duniani.  
+        Umenifanya niamini kwamba upendo wa kweli upo, na kwamba moyo unaweza kumpata mtu wake sahihi 🌍  
+
+        Nakutakia maisha marefu yenye amani, furaha, afya njema na mafanikio yasiyo na kikomo ✨  
+        Kila ndoto yako na kila jambo unalotamani lifanikiwe kwa wakati wake.  
+
+        Nakutakia siku hii iwe ya furaha isiyo na mwisho, na kila siku ya maisha yako ijazwe upendo na baraka ❤️  
+
+        Rahma... kumbuka hili daima: wewe ni maalum kuliko unavyofikiri, na una nafasi ya pekee sana katika moyo wangu 💌  
+
+        Nakupenda sana leo, kesho na milele ❤️
+    </div>
+</div>
+
+<script>
+function login(){
+    let u = document.getElementById("user").value;
+    let p = document.getElementById("pass").value;
+
+    if(u === "rahma" && p === "1234"){
+        document.getElementById("loginBox").style.display = "none";
+        document.getElementById("page").style.display = "block";
+    } else {
+        alert("Username au Password si sahihi!");
+    }
+}
+</script>
+
+</body>
+</html>
